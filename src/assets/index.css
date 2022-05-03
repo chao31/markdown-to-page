@@ -1,0 +1,87 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/themes/prism-tomorrow.min.css);
+
+:root {
+  --theme-color: #5e7ce0;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+.markdown-content {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.nav {
+  width: 13rem;
+  padding: 1rem 0 0 0;
+}
+
+/* 右边栏目录部分渲染  */
+.nav-toc {
+  position: fixed;
+  padding-left: .5rem;
+  border-left: 1px solid #e7eaf0;
+}
+
+.nav-toc ul {
+  list-style-type: none;
+  padding-left: 8px;
+  color: var(--text-color-base, black);
+  line-height: 1.6em;
+}
+
+.nav-toc .anchor {
+  display: inline-block;
+  color: #34495e;
+  line-height: 1.75em;
+  width: 10rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-decoration: none;
+  transition: all .3s;
+}
+
+.nav-toc .anchor:hover {
+  color: var(--theme-color);
+}
+
+.nav-toc .anchor.active {
+  border-left: .3rem solid;
+  color: var(--theme-color);
+  padding-left: .6rem;
+  transition: all .2s ease-out;
+}
+
+@media screen and (max-width:1200px) {
+
+  .markdown-content {
+    flex-direction: column;
+  }
+
+  .nav {
+    width: auto;
+    margin: 0 1.5rem;
+    padding: 1rem 1rem 0 1.5rem;
+  }
+
+  .nav-toc {
+    position: relative;
+    border: 0;
+    border-bottom: 1px solid #e7eaf0;
+    font-size: 1.0em;
+    padding-left: 0;
+  }
+
+  .nav-toc .anchor {
+    width: auto;
+  }
+
+  .markdown-section {
+    margin: 0 auto;
+  }
+}

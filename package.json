@@ -52,6 +52,7 @@
     "@types/markdown-it": "^12.2.3",
     "@types/prismjs": "^1.26.0",
     "@types/react": "^18.0.8",
+    "@types/react-dom": "^18.0.3",
     "@types/react-router-dom": "^5.3.3",
     "@types/uslug": "^1.0.1",
     "husky": "^7.0.4",

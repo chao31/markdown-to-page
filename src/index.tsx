@@ -1,10 +1,8 @@
-// import React from 'react';
-import * as React from 'react';
-
 import './assets/index.css';
 import './assets/markdown.css';
 
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState, Fragment } from 'react';
+
 import { useLocation } from 'react-router-dom';
 import { getAnchorLink, getInstance } from './utils';
 
@@ -13,14 +11,14 @@ let options: MkOptions;
 // render dom tree by recursion
 function renderTree(tree: HeadlinesItem[]) {
   return (
-    <div>
+    <Fragment>
       {tree.map(({ element, items }: HeadlinesItem, index: number) => (
-        <div key={index}>
+        <Fragment key={index}>
           {element && <QueryLink element={element} />}
           {items.length !== 0 && <ul>{renderTree(items)}</ul>}
-        </div>
+        </Fragment>
       ))}
-    </div>
+    </Fragment>
   );
 }
 

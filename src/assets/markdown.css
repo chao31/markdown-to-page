@@ -9,11 +9,6 @@
   margin: 0 24px;
 }
 
-/* .markdown-section>* {
-  box-sizing: border-box;
-  font-size: inherit
-} */
-
 .markdown-section hr {
   border: 0;
   border-bottom: 1px solid #eee;
@@ -81,19 +76,20 @@
 }
 
 .markdown-section p.tip code,
-.markdown-section p code {
-  font-family: Menlo, Monaco, Consolas, Courier New, monospace;
+.markdown-section p code,
+.markdown-section tr code {
   word-break: break-word;
-  border-radius: 2px;
+  border-radius: 6px;
   overflow-x: auto;
-  background-color: #ffeeed;
-  color: #c73636;
-  font-size: .87em;
-  padding: 0.065em 0.4em;
+  background-color: var(--font-bg);
+  color: var(--font-color);
+  font-size: .95em;
+  padding: 0.2em 0.4em;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
 }
 
 .markdown-section p.tip em {
-  color: #34495e
+  color: var(--font-color);
 }
 
 .markdown-section p.warn {
@@ -112,17 +108,41 @@
 .markdown-section h4,
 .markdown-section strong {
   color: #2c3e50;
-  font-weight: 600
+  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+}
+
+.markdown-section h1 code,
+.markdown-section h2 code,
+.markdown-section h3 code,
+.markdown-section h4 code,
+.markdown-section h5 code,
+.markdown-section h6 code,
+.markdown-section li code,
+.markdown-section a code,
+.markdown-section tr code {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
 }
 
 .markdown-section a {
+  padding: 0.2em 0.4em;
+  margin: 0;
+  border-radius: 6px;
+  background-color: rgba(175, 184, 193, 0.2);
   color: var(--theme-color);
-  font-weight: 600
+  font-size: 85%;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.markdown-section a code {
+  background-color: rgba(0, 0, 0, 0);
+  color: var(--theme-color);
 }
 
 .markdown-section h1 {
-  font-size: 2rem;
-  margin: 0 0 1rem
+  font-size: 1.875rem;
+  margin-bottom: 5px;
 }
 
 
@@ -151,7 +171,9 @@
 
 .markdown-section figure,
 .markdown-section p {
-  margin: 1.2em 0
+  margin: 1.2em 0;
+  font-weight: 400;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
 }
 
 .markdown-section ol,
@@ -198,7 +220,6 @@
   width: 100%;
   background: url(data:image/png;base64,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) 10px 10px no-repeat;
   background-color: #2d2d2d;
-  /* box-shadow: 0 0 8px hsl(0deg 0% 43% / 45%); */
   background-size: 40px;
 }
 
@@ -222,9 +243,10 @@
 .markdown-section a.header-anchor {
   font-size: .85em;
   float: left;
-  margin-left: -.87em;
+  margin-left: -1.4em;
   padding-right: .23em;
-  margin-top: .3em;
+  margin-top: .1em;
+  background-color: rgba(0, 0, 0, 0);
   opacity: 0;
   text-decoration: none;
 }
@@ -234,17 +256,9 @@
   display: block;
   width: .85em;
   height: .85em;
-
-  /* float: left;
-  margin-left: -.87em;
-  padding-right: .23em;
-  margin-top: .125em;
-  text-decoration: none; */
-
   background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGlkPSJhYWEiIGNsYXNzPSJvY3RpY29uIG9jdGljb24tbGluayIgdmlld0JveD0iMCAwIDE2IDE2IiB2ZXJzaW9uPSIxLjEiIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgYXJpYS1oaWRkZW49InRydWUiPjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTcuNzc1IDMuMjc1YS43NS43NSAwIDAwMS4wNiAxLjA2bDEuMjUtMS4yNWEyIDIgMCAxMTIuODMgMi44M2wtMi41IDIuNWEyIDIgMCAwMS0yLjgzIDAgLjc1Ljc1IDAgMDAtMS4wNiAxLjA2IDMuNSAzLjUgMCAwMDQuOTUgMGwyLjUtMi41YTMuNSAzLjUgMCAwMC00Ljk1LTQuOTVsLTEuMjUgMS4yNXptLTQuNjkgOS42NGEyIDIgMCAwMTAtMi44M2wyLjUtMi41YTIgMiAwIDAxMi44MyAwIC43NS43NSAwIDAwMS4wNi0xLjA2IDMuNSAzLjUgMCAwMC00Ljk1IDBsLTIuNSAyLjVhMy41IDMuNSAwIDAwNC45NSA0Ljk1bDEuMjUtMS4yNWEuNzUuNzUgMCAwMC0xLjA2LTEuMDZsLTEuMjUgMS4yNWEyIDIgMCAwMS0yLjgzIDB6Ii8+PC9zdmc+);
   background-size: contain;
   background-repeat: no-repeat;
-
 }
 
 .markdown-section h1:hover .header-anchor,

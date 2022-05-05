@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom/client';
 
 import MarkdownPage from '../.';
 import { HashRouter as BrowserRouter, Route, Switch } from 'react-router-dom';
-import { CONTENT } from './consts';
+// import { CONTENT } from './consts';
+import { CONTENT } from './aaa';
 
 const App = () => (
   <BrowserRouter>

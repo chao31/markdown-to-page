@@ -1,19 +1,27 @@
 # markdown-to-page
+[![npm](https://badgen.net/npm/v/markdown-to-page)](https://www.npmjs.com/package/markdown-to-page)
+[![test](https://badgen.net/github/checks/chao31/markdown-to-page/master/test)](https://www.npmjs.com/package/markdown-to-page)
+[![last-commit](https://badgen.net/github/last-commit/chao31/markdown-to-page)](https://www.npmjs.com/package/markdown-to-page)
+[![license](https://badgen.net/github/license/chao31/markdown-to-page)](https://www.npmjs.com/package/markdown-to-page)
 
 Light weight react component for creating an responsive markdown page with beautiful TOC.
 
+## Overview
+
+![](https://github.com/chao31/myAssets/raw/master/markdown-to-page/intro.gif)
+
 ## Features
 
-* Supports [`<HashRouter>`](https://reactrouter.com/docs/en/v6/api#hashrouter).
+* Supports [`<HashRouter>`](https://reactrouter.com/docs/en/v6/api#hashrouter) 🔥.
 * Supports [`<BrowserRouter>`](https://reactrouter.com/docs/en/v6/api#browserrouter).
-* Auto create a table of contents.
-* Responsive component.
-* Code highlighting.
+* Auto create a table of contents 😍.
+* Responsive component 🔥.
+* Code highlighting 😍.
 * Optional support for theme.
 * Easy-to-use.
-* Thorough documentation 😍.
-* Chinese docs.
-* High speed.
+* Thorough documentation 🎉.
+* Chinese docs 🌐.
+* High speed 🔥.
 * [Safe](https://github.com/markdown-it/markdown-it/tree/master/docs/security.md) by default.
 
 ## Installation
@@ -30,7 +38,7 @@ yarn add markdown-to-page
 
 ## Usage
 
-Only `markdownText` is a required prop
+Only `markdownText` is required.
 
 ```js
 import * as React from 'react';
@@ -60,11 +68,11 @@ Follows the __[CommonMark spec](http://spec.commonmark.org/)__ + adds syntax ext
 
 ### `isHashRouter`
 
-Use [`<HashRouter>`](https://reactrouter.com/docs/en/v6/api#hashrouter) whether or not.
+Use __[`<HashRouter>`](https://reactrouter.com/docs/en/v6/api#hashrouter)__ whether or not.
 
 ### `themeColor`
 
-Change the style of the page with a main color, incoming prop like `themeColor={'5e7ce0'}` or `themeColor={'#5e7ce0'}` are all OK.
+Change the style of the page with a main color, incoming prop like `themeColor='5e7ce0'` or `themeColor='#5e7ce0'` are all OK.
 
 ### `anchorId`
 
@@ -72,7 +80,7 @@ The default anchorId is `_to` , just like this `localhost:8080/#/page/level/?_to
 
 ### `markdownInstance`
 
-This prop is a instance of [Markdown-it](https://www.npmjs.com/package/markdown-it), when you want to implement a markdown parse by yourself.
+This prop is a instance of __[Markdown-it](https://www.npmjs.com/package/markdown-it)__ , when you want to implement a markdown parse by yourself.
 
 ## FAQ
 

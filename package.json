@@ -47,13 +47,17 @@
       "limit": "10 KB"
     }
   ],
-  
   "devDependencies": {
     "@size-limit/preset-small-lib": "^7.0.8",
     "@types/markdown-it": "^12.2.3",
     "@types/prismjs": "^1.26.0",
+    "@types/react": "^18.0.8",
+    "@types/react-router-dom": "^5.3.3",
     "@types/uslug": "^1.0.1",
     "husky": "^7.0.4",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "react-router-dom": "5",
     "rollup-plugin-postcss": "^4.0.2",
     "size-limit": "^7.0.8",
     "tsdx": "^0.14.1",

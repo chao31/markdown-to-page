@@ -15,3 +15,10 @@ const App = () => (
 );
 
 ReactDOM.render(<App />, document.getElementById('root'));
+
+// "react": "16.13.1",
+//     "react-dom": "16.13.1",
+//     "react-router-dom": "^5.3.0",
+
+// "@types/react-router-dom": "^5.3.3",
+//     "@types/react-dom": "^18.0.3",

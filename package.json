@@ -35,7 +35,7 @@
     "trailingComma": "es5"
   },
   "name": "markdown-to-page",
-  "author": "chaotang",
+  "author": "chao31",
   "module": "dist/markdown-to-page.esm.js",
   "size-limit": [
     {

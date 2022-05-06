@@ -3,11 +3,13 @@
 [![last-commit](https://badgen.net/github/last-commit/chao31/markdown-to-page)](https://www.npmjs.com/package/markdown-to-page)
 [![license](https://badgen.net/github/license/chao31/markdown-to-page)](https://www.npmjs.com/package/markdown-to-page)
 
-Light weight react component for creating an responsive markdown page with beautiful TOC.
+Light weight react component for creating a responsive markdown page with beautiful TOC.
+
+📖 [中文版](https://github.com/chao31/markdown-to-page/blob/master/md-doc-zh.md)
 
 ## Overview
 
-![](https://github.com/chao31/myAssets/raw/master/markdown-to-page/intro.gif)
+![Image from Gyazo](https://i.gyazo.com/5fc74622bab0fb613705f52fba939593.gif)
 
 ## Features
 
@@ -26,7 +28,7 @@ Light weight react component for creating an responsive markdown page with beaut
 ## Installation
 
 ```js
-npm install --save markdown-to-page
+npm install markdown-to-page
 ```
 
 with yarn :
@@ -155,4 +157,4 @@ npm publish
 
 ## License
 
-MIT
+MIT © [chao31](https://github.com/chao31)

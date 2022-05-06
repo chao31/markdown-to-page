@@ -1,6 +1,5 @@
 # markdown-to-page
 [![npm](https://badgen.net/npm/v/markdown-to-page)](https://www.npmjs.com/package/markdown-to-page)
-[![test](https://badgen.net/github/checks/chao31/markdown-to-page/master/test)](https://www.npmjs.com/package/markdown-to-page)
 [![last-commit](https://badgen.net/github/last-commit/chao31/markdown-to-page)](https://www.npmjs.com/package/markdown-to-page)
 [![license](https://badgen.net/github/license/chao31/markdown-to-page)](https://www.npmjs.com/package/markdown-to-page)
 
@@ -86,7 +85,7 @@ This prop is a instance of __[Markdown-it](https://www.npmjs.com/package/markdow
 
 ### Anchor don't work under `HashRouter`
 
-To check whether `React.StrictMode` is used , `markdown-to-page` monitor URL changes by `react-router-dom`, but the usage of `useLocation` hook will fail under strict mode , just like this:
+To check whether `React.StrictMode` is used , `markdown-to-page` monitor URL changes by `react-router-dom`, but the `useLocation` hook will fail under strict mode , just like this:
 
 ```js
 import * as React from 'react';

@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -36,6 +36,25 @@
   },
   "name": "markdown-to-page",
   "author": "chao31",
+  "keywords": [
+    "markdown",
+    "markdown-it",
+    "toc",
+    "tableofcontents",
+    "typescript",
+    "react"
+  ],
+  "tags": [
+    "markdown",
+    "markdown-it",
+    "toc",
+    "tableofcontents",
+    "typescript",
+    "react",
+    "html"
+  ],
+  "repository": "https://github.com/chao31/markdown-to-page",
+  "homepage": "https://github.com/chao31/markdown-to-page",
   "module": "dist/markdown-to-page.esm.js",
   "size-limit": [
     {

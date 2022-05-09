@@ -5,12 +5,15 @@
 
 Light weight react component for creating a responsive markdown page with beautiful TOC.
 
-📖 [中文版](https://github.com/chao31/markdown-to-page/blob/master/md-doc-zh.md)
+📖 [简体中文](https://github.com/chao31/markdown-to-page/blob/master/md-doc-zh.md)
 
 ## Overview
 
 ![Image from Gyazo](https://i.gyazo.com/5fc74622bab0fb613705f52fba939593.gif)
 
+## Demo
+
+[Check out the demo page.](https://chao31.github.io/markdown-to-page/)
 ## Features
 
 * Supports [`<HashRouter>`](https://reactrouter.com/docs/en/v6/api#hashrouter) 🔥.
